@@ -8,6 +8,3 @@ Sticking to the theme of NFT's from a previous project, a lot of NFT projects la
 
 Here you'll find the Jupyter Notebook and folder structure needed to bulk generate GIFs that takes the input files labeled 1_front.jpg and 1_back.jpg and so on... and generates the output GIFs to the gifs_output folder. 
 
-If you'd like to learn a bit more about the final product, please visit http://www.yoshi-m.com/others/cardflip.
-
-
