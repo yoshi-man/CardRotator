@@ -3,7 +3,6 @@
 This package helps users generate 3D rotating animation cards based on image pairs of front and back. This is similar to what 3dgifmaker (https://www.3dgifmaker.com/) can do, but couldn't really generate them in bulk. This module provides an alternative solution with bulk-generating capabilities.
 
 
-
 ## Installation
 
 Run the following to install the python dependencies:
@@ -51,4 +50,12 @@ rotator.run(output_path)
 |  -------  | ----- |   ------   |   
 |   output_path      | absolute path of where the output GIFs should be located                                        | n/a     | 
 
+
+## Demo
+
+### Examples
+![1_front](https://github.com/yoshi-man/CardRotator/blob/main/examples/1_front.jpg?raw=true)
+![1_back](https://github.com/yoshi-man/CardRotator/blob/main/examples/1_back.jpg?raw=true)
+
+![gif](https://github.com/yoshi-man/CardRotator/blob/main/examples/1.gif)
 
