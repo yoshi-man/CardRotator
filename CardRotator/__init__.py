@@ -43,6 +43,7 @@ class CardRotator():
         self.input_folder = input_folder
         self.file_names = self.__detect_file_pairs()
         self.frames = frames
+        self.speed = speed
         self.buffer_px = buffer_px
         self.zoom_factor = zoom_factor
         self.verbose = verbose
