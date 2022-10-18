@@ -31,12 +31,13 @@ rotator.run(output_path)
 To vary parameters of the animations, `CardRotator` class has arguments shown below:
 
 ```Python
-rotator = CardRotator(input_folder)
+rotator = CardRotator(input_folder: str, frames: int = 240, speed: int = 60, 
+                      buffer_px: int = 100, zoom_factor: int = 50, verbose: bool = True)
 ```
 
 | Name           |   Description                                                       | Default setting  |
 |  -------  | ----- |   ------   |   
-|   input_folder      | absolute path with image file pairs. Each image pair should be formatted exactly as `[file_name]_front.jpg` and `[file_name]_back.jpg`                                        | n/a     |                                           
+|   input_folder      | absolute path with image file pairs, where each image pair should be formatted exactly as `[file_name]_front.jpg` and `[file_name]_back.jpg` for it to be successfully detected                                       | n/a     |                                           
 |   frames     |   number of frames, controls the smoothness                          | 240 |
 |   speed  |   speed of rotation, play around with this number                           | 60 |
 |   buffer_px      |   the black frame to extend the image by in pixels                 | 100 | 
