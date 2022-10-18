@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+CardRotator/__init__.py
+card_rotator_yoshiman.egg-info/PKG-INFO
+card_rotator_yoshiman.egg-info/SOURCES.txt
+card_rotator_yoshiman.egg-info/dependency_links.txt
+card_rotator_yoshiman.egg-info/top_level.txt
