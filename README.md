@@ -55,8 +55,8 @@ rotator.run(output_path)
 ## Demo
 
 ### Examples
-![1_front](https://github.com/yoshi-man/CardRotator/blob/main/examples/1_front.jpg?raw=true)
-![1_back](https://github.com/yoshi-man/CardRotator/blob/main/examples/1_back.jpg?raw=true)
+![1_front](https://github.com/yoshi-man/CardRotator/blob/main/examples/1_front.jpg)
+![1_back](https://github.com/yoshi-man/CardRotator/blob/main/examples/1_back.jpg)
 
 ![gif](https://github.com/yoshi-man/CardRotator/blob/main/examples/1.gif)
 
