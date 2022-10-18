@@ -1,12 +1,54 @@
-# Card Flip Animation - Bulk-generating card flipping 3D animation GIFs
+# Card Rotator - Generating 3D Rotation Animation GIFs
 
-## Project Brief
-Sticking to the theme of NFT's from a previous project, a lot of NFT projects lately are using 3D art to distinguish their project from others, this was the exact idea me and my friends had originally. We found a website (https://www.3dgifmaker.com/) that could help us do a 3D spinning card, but couldn't really generate them in bulk - we wanted to generate a few thousand of these .Having looked through so many libraries, I ended up coding the animation with OpenCV.
+This package helps users generate 3D rotating animation cards based on image pairs of front and back. This is similar to what 3dgifmaker (https://www.3dgifmaker.com/) can do, but couldn't really generate them in bulk. This module provides an alternative solution with bulk-generating capabilities.
 
 
-## What You'll Find Here
 
-Here you'll find the Jupyter Notebook and folder structure needed to bulk generate GIFs that takes the input files labeled 1_front.jpg and 1_back.jpg and so on... and generates the output GIFs to the gifs_output folder. 
+## Installation
 
-Here's an example of a resultant GIF:
-https://yoshi-m-website.s3.ap-east-1.amazonaws.com/card_flip_demo.gif
+Run the following to install the python dependencies:
+
+```
+pip install opencv-python numpy Pillow
+```
+
+To install this package via pip, run:
+```
+pip install card-rotator
+```
+
+## Usage
+
+### Basic Usage
+```Python
+from CardRotator import CardRotator
+
+rotator = CardRotator(input_folder)
+
+rotator.run(output_path)
+```
+
+## Parameters
+To vary parameters of the animations, `CardRotator` class has arguments shown below:
+
+```Python
+rotator = CardRotator(input_folder)
+```
+
+| Name           |   Description                                                       | Default setting  |
+|  -------  | ----- |   ------   |   
+|   input_folder      | absolute path with image file pairs. Each image pair should be formatted exactly as `[file_name]_front.jpg` and `[file_name]_back.jpg`                                        | n/a     |                                           
+|   frames     |   number of frames, controls the smoothness                          | 240 |
+|   speed  |   speed of rotation, play around with this number                           | 60 |
+|   buffer_px      |   the black frame to extend the image by in pixels                 | 100 | 
+|   zoom_factor    |  affects the field of view, play around with this                     | 50 | 
+|   verbose    |  if you'd like to have printed statements                   | True | 
+
+```Python
+rotator.run(output_path)
+```
+| Name           |   Description                                                       | Default setting  |
+|  -------  | ----- |   ------   |   
+|   output_path      | absolute path of where the output GIFs should be located                                        | n/a     | 
+
+

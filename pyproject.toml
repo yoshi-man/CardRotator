@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "card-rotator_yoshiman"
+version = "0.0.1"
+authors = [
+  { name="Yoshi Man", email="yoshiman@me.com" },
+]
+description = "A simple package to generate GIF files of realistic rotating cards based on image pairs."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yoshi-man/CardRotator"
+"Bug Tracker" = "https://github.com/yoshi-man/CardRotator/issues"
